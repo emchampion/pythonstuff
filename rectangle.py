@@ -36,7 +36,7 @@ def main():
     a = Rectangle(5,7)
     print ("area: {}".format(a.area()))
     print ("perimeter: {}".format(a.perimeter()))
-    print ()
+    print ""
     print ("Rectangle b:")
     b = Rectangle()
     b.width = 10
