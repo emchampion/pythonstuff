@@ -3,15 +3,9 @@ class Rectangle():
         self.height = height
         self.width = width
     def setHeight(self, height):
-        if type(height)!=int:
-            self.height = 2
-        else:
-            self.height = height
+        self.height = height
     def setWidth(self, width):
-        if type(width)!=int:
-            self.width = 2
-        else:
-            self.width = width
+        self.width = width
 
     def getHeight(self):
         return self.height
@@ -32,15 +26,16 @@ class Rectangle():
         print("Perimeter: {}".format(self.perimeter()))
 
 def main():
-    print ("Rectangle a:")
-    a = Rectangle(5,7)
-    print ("area: {}".format(a.area()))
-    print ("perimeter: {}".format(a.perimeter()))
-    print ""
-    print ("Rectangle b:")
-    b = Rectangle()
-    b.width = 10
-    b.height = 20
-    b.getStats()
+   print "Rectangle a:"
+   a = Rectangle(5, 7)
+   print "area: %d" % a.area
+   print "perimeter: %d" % a.perimeter
+
+   print ""
+   print "Rectangle b:"
+   b = Rectangle()
+   b.width = 10
+   b.height = 20
+   print b.getStats()
 
 main()
