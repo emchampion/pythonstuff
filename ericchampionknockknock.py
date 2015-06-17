@@ -1,8 +1,9 @@
 #knock knock joke
 
 name = raw_input("What is your name?")
-'''simple test to make sure they start they inputs and dont try to enter something else'''
+#simple test to make sure they use letters for inputs and dont try to enter something else
 #storage list for first letter checks
+#this could also be done by uppercasing user inputs
 wouldLike = ['Y', 'y']
 whoThere = ['W', 'w']
 repeat = ['R', 'r']
@@ -14,7 +15,7 @@ else:
     print 'Are you trying to trick me? You entered a nothing or a number!'
 #pulls the first letter of the "whos there"
 
-
+#this could be improved by uppercase all user inputs
 if answer in wouldLike:
     knock = raw_input("Knock Knock...")
     knocktest = knock[0]
