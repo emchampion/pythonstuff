@@ -12,12 +12,17 @@ class Rectangle():
     def getWidth(self):
         return self.width
 
-    def perimeter(self):
-        perimeter = ((2*self.height)+(2*self.width))
+    def getArea(self):
+        area = self.height * self.width
+        return area
+
+    area = property(fget = getArea)
+
+    def getPerimeter(self):
+        perimeter = (2 * self.height) + (2 * self.width)
         return perimeter
 
-    def area(self):
-        return self.height * self.width
+    perimeter = property(fget = getPerimeter)
 
     def getStats(self):
         print("Width:     {}".format(self.width))
